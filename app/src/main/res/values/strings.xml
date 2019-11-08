@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShopCard01</string>
+
+    <string-array name="options">
+        <item> "Просмотр" </item>
+        <item> "Добавление" </item>
+        <item> "Удаление" </item>
+    </string-array>
+</resources>
