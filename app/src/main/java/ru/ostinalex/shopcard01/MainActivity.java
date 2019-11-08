@@ -14,16 +14,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String[] countries = { "Бразилия", "Аргентина", "Колумбия", "Чили", "Уругвай"};
+        String[] mainItems = {"Просмотр", "Добавление", "Удаление"};
         setContentView(R.layout.activity_main);
-        // получаем элемент ListView
-//        ListView countriesList = (ListView) findViewById(R.id.countriesList);
-
-        // создаем адаптер
-        ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, countries);
-
-        // устанавливаем для списка адаптер
-//        countriesList.setAdapter(adapter);
+        ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, mainItems);
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -35,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         };
         ListView listView = findViewById(R.id.list_item);
         listView.setAdapter(adapter);
-
-//        listView.setOnItemClickListener(itemClickListener);
-
+        listView.setOnItemClickListener(itemClickListener);
     }
 }
