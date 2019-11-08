@@ -12,3 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+.idea/shelf/
+.idea/vcs.xml
+.gitignore
+app/.gitignore
