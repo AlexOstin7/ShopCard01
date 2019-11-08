@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         ListView listView = findViewById(R.id.list_item);
-        listView.setOnItemClickListener(itemClickListener);
+//        listView.setOnItemClickListener(itemClickListener);
 
     }
 }

@@ -17,7 +17,7 @@
         android:id="@+id/list_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:entries="@array/options"/>
+        android:layout_margin="25dp" />
+<!--        android:entries="@array/options"-->
 
 </LinearLayout>
