@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
-                    Intent intent = new Intent(MainActivity.this, ShopCardItem.class);
+                    Intent intent = new Intent(MainActivity.this, StoreCardActivity.class);
                     startActivity(intent);
                 }
             }
