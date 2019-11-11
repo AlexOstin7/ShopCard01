@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String[] mainItems = {"Просмотр", "Добавление", "Удаление"};
+        String[] mainItems = {"Просмотр", "Добавление", "Удаление", "Выход"};
         setContentView(R.layout.activity_main);
         ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, mainItems);
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
